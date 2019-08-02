@@ -1,0 +1,123 @@
+.gstart{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 200px;
+
+}
+
+.well {
+	margin-top: 100px;
+	text-align: center;
+}
+
+
+.users  {
+	margin: 30px;
+
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.twelve { width: 100%; }
+.eleven { width: 91.53%; }
+.ten { width: 83.06%; }
+.nine { width: 74.6%; }
+.eight { width: 66.13%; }
+.seven { width: 57.66%; }
+.six { width: 49.2%; }
+.five { width: 40.73%; }
+.four { width: 32.26%; }
+.three { width: 23.8%; }
+.two { width: 15.33%; }
+.one { width: 6.866%; }
+
+/* COLUMNS */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type {
+  margin-left: 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* ALL BUTTONS */
+
+.button{
+  display: inline-block;
+  padding: 20px 50px;
+  margin: 20px 0;
+  position: relative;
+  color: #000;
+}
+
+.button,{
+  color: #34495e;
+  overflow: hidden;
+}
+
+.button:before, .button:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #2e5c08;
+  top: 0;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:after{
+  bottom: 0 !important;
+  top: auto !important;
+  right: -100%;
+  left: auto;
+}
+
+.button:hover:before{
+  left: 0;
+}
+
+.button:hover:after{
+  right: 0;
+}

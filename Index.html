@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi player</title>
+    <link rel="stylesheet" href="css/multiplayer.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+    <div class="container">
+        <div class="users">
+            <span>Player1</span>
+            <p class="ugame" id="user1"></p>
+            <p id="score1" class="ugame"> </p>
+        </div>
+        <div class="users">
+            <span>Player2</span>
+            <p class="ugame" id="user2"></p>
+            <p id="score2" class="ugame"> </p>
+        </div>
+    </div>
+    <div class="game" id="games">
+        <div id="reg">
+            <div class="typewriter">
+                <h1>Welcome To my Game</h1>
+                <img src="css/start.gif" alt="" id="smile">
+            </div>
+            <div class="page">
+                <label class="field a-field a-field_a1 page__field">
+                    <input class="field__input a-field__input" id="player1" placeholder="Player 1 " required>
+                    <span class="a-field__label-wrap">
+                        <span class="a-field__label">Youre name</span>
+                    </span>
+                </label>
+                <label class="field a-field a-field_a1 page__field">
+                    <input class="field__input a-field__input" id="player2" placeholder="Player 2 " required>
+                    <span class="a-field__label-wrap">
+                        <span class="a-field__label">Youre name</span>
+                    </span>
+                </label>
+            </div>
+            <button class="btn">Continue</button>
+        </div>
+        <div class="finish">
+            <div class="gameover">
+                <h1>
+                    <span>g</span>
+                    <span>a</span>
+                    <span>m</span>
+                    <span>e</span>
+                    </br>
+                    <span>o</span>
+                    <span>v</span>
+                    <span>e</span>
+                    <span>r</span>
+                </h1>
+            </div>
+            <div class="win">
+                <h1 class="won">WIN</h1>
+                <h1 id="win" class="won"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/lodash.js"></script>
+    <script src="js/lib/howler.js"></script>
+    <script type="text/javascript" src="js/Star.js"></script>
+    <script type="text/javascript" src="js/Circle.js"></script>
+    <script type="text/javascript" src="js/Gift.js"></script>
+    <script type="text/javascript" src="js/Player.js"></script>
+    <script type="text/javascript" src="js/Game.js"></script>
+    <script type="text/javascript" src="js/multiplayer.js"></script>
+</body>
+
+</html>
